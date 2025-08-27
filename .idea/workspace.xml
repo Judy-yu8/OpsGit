@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5f22879-f676-4d3c-ab85-2536cfb10bef" name="更改" comment="增加初始目录并尝试ignore">
-      <change afterPath="$PROJECT_DIR$/bin/clear.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/librarys.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keywords/000_common_keyword.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keywords/001_document_userguide_keyword.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OpsGit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OpsGit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d5f22879-f676-4d3c-ab85-2536cfb10bef" name="更改" comment="使用本地python，删除venu，安装browser，demo可通">
+      <change afterPath="$PROJECT_DIR$/testcases/000_common/demo.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/001_docs/001_DocsTestcase.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/data/001_docs_testdata.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/selector/docs/001_docs_dashboard_selector.resource" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keywords/000_common_keyword.robot" beforeDir="false" afterPath="$PROJECT_DIR$/keywords/000_common/000_common_keyword.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keywords/001_document_userguide_keyword.robot" beforeDir="false" afterPath="$PROJECT_DIR$/keywords/001_document/001_document_userguide_keyword.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keywords/common.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +36,12 @@
     &quot;assignee&quot;: &quot;Judy-yu8&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Judy-yu8/OpsGit.git",
-    "accountId": "c97e7eeb-e2ca-487b-a0a2-edf2a45142d4"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Judy-yu8/OpsGit.git&quot;,
+    &quot;accountId&quot;: &quot;c97e7eeb-e2ca-487b-a0a2-edf2a45142d4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -65,12 +64,13 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/41599/PycharmProjects/OpsGit/keywords",
+    "last_opened_file_path": "C:/Users/41599/PycharmProjects/OpsGit/bin",
     "settings.editor.selected.configurable": "robocorp.robot.intellij.RobotPreferencesPage"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\41599\PycharmProjects\OpsGit\bin" />
       <recent name="C:\Users\41599\PycharmProjects\OpsGit\keywords" />
       <recent name="C:\Users\41599\PycharmProjects\OpsGit" />
     </key>
@@ -90,6 +90,19 @@
       <option name="presentableId" value="Default" />
       <updated>1756258944187</updated>
     </task>
+    <task id="LOCAL-00001" summary="使用本地python，删除venu，安装browser，demo可通">
+      <option name="closed" value="true" />
+      <created>1756266543069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756266543069</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="使用本地python，删除venu，安装browser，demo可通" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用本地python，删除venu，安装browser，demo可通" />
   </component>
 </project>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-08-27T16:56:19.055809" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\41599\PycharmProjects\OpsGit\testcases">
+<suite id="s1-s1" name="000 Common" source="C:\Users\41599\PycharmProjects\OpsGit\testcases\000_common">
+<suite id="s1-s1-s1" name="Demo" source="C:\Users\41599\PycharmProjects\OpsGit\testcases\000_common\demo.robot">
+<test id="s1-s1-s1-t1" name="Robot Run Script Normal" line="5">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-27T16:56:19.426758" level="INFO">${num} = 1</msg>
+<var>${num}</var>
+<arg>random.randint(0,2)</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-27T16:56:19.424081" elapsed="0.002766"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2025-08-27T16:56:19.427952" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<arg>1</arg>
+<arg>${num}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-08-27T16:56:19.427454" elapsed="0.000613"/>
+</kw>
+<msg time="2025-08-27T16:56:19.577217" level="INFO">Starting Browser process C:\Users\41599\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50603</msg>
+<tag>extra</tag>
+<status status="PASS" start="2025-08-27T16:56:19.422153" elapsed="0.006275"/>
+</test>
+<test id="s1-s1-s1-t2" name="Custom Library Test" line="10">
+<kw name="Add" owner="demo">
+<msg time="2025-08-27T16:56:21.884578" level="INFO">${res} = 3</msg>
+<var>${res}</var>
+<arg>1</arg>
+<arg>2</arg>
+<status status="PASS" start="2025-08-27T16:56:21.884005" elapsed="0.000626"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2025-08-27T16:56:21.885422" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${res}</arg>
+<arg>3</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-08-27T16:56:21.885016" elapsed="0.000497"/>
+</kw>
+<status status="PASS" start="2025-08-27T16:56:21.879491" elapsed="0.006323"/>
+</test>
+<status status="PASS" start="2025-08-27T16:56:19.124235" elapsed="2.773879"/>
+</suite>
+<status status="PASS" start="2025-08-27T16:56:19.121688" elapsed="2.785056"/>
+</suite>
+<suite id="s1-s2" name="001 Docs" source="C:\Users\41599\PycharmProjects\OpsGit\testcases\001_docs">
+<suite id="s1-s2-s1" name="001 DocsTestcase" source="C:\Users\41599\PycharmProjects\OpsGit\testcases\001_docs\001_DocsTestcase.robot">
+<kw name="Open Browser With Chrome" owner="000_common_keyword" type="SETUP">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>打开浏览器\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-27T16:56:21.930053" elapsed="0.000672"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<arg>30s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2025-08-27T16:56:21.931020" elapsed="0.004739"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T16:56:21.938315" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\41599\\PycharmProjects\\OpsGit\\bin\\report\\browser\\traces\\temp\\de6b8eec-0a3c-47a5-9f13-519ae8e4df8e"}</msg>
+<msg time="2025-08-27T16:56:22.986320" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\41599\\PycharmProjects\\OpsGit\\bin\\report\\browser\\traces\\temp\\de6b8eec-0a3c-47a5-9f13-519ae8e4df8e"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T16:56:21.936104" elapsed="1.050552"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T16:56:25.958013" level="INFO">Successfully initialized new page object and opened url: https://docs.robotframework.org/</msg>
+<msg time="2025-08-27T16:56:25.958146" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${url_test}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T16:56:22.987013" elapsed="2.971361"/>
+</kw>
+<status status="PASS" start="2025-08-27T16:56:21.929390" elapsed="4.029212"/>
+</kw>
+<test id="s1-s2-s1-t1" name="User Guide Page Normal" line="7">
+<kw name="Go To User Guide Page" owner="001_document_userguide_keyword">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n进入User Guide页面</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-27T16:56:25.996864" elapsed="0.001439"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T16:56:25.999311" level="INFO">Clicks the element 'xpath=//a[string()="User Guide" and @class="navbar__item navbar__link"]'.</msg>
+<arg>${user_guide_link_a}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T16:56:25.998542" elapsed="0.256933"/>
+</kw>
+<doc>进入User Guide页面</doc>
+<status status="PASS" start="2025-08-27T16:56:25.995792" elapsed="0.259851"/>
+</kw>
+<kw name="Verify User Guide Page Normal" owner="001_document_userguide_keyword">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n检查User Guide页面正常打开</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-27T16:56:26.256605" elapsed="0.000407"/>
+</kw>
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-08-27T16:56:26.258342" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg time="2025-08-27T16:56:26.578343" level="INFO">Activated new page page=49cb76a9-19a8-4365-915a-85577ad70473</msg>
+<msg time="2025-08-27T16:56:26.578626" level="INFO">${previous} = page=0e77a23b-5748-49c2-8758-d3b97684f2c9</msg>
+<var>${previous}</var>
+<arg>NEW</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-08-27T16:56:26.257262" elapsed="0.321415"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-08-27T16:56:26.581812" level="INFO">${url_expect} = https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html</msg>
+<var>${url_expect}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-08-27T16:56:26.578930" elapsed="0.002921"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${url_expect}</arg>
+<arg>${user_guide_page_url}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-08-27T16:56:26.582030" elapsed="0.000411"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-27T16:56:27.521441" level="INFO">Text: 'Robot Framework User Guide'</msg>
+<msg time="2025-08-27T16:56:27.521622" level="INFO">${text_expect} = Robot Framework User Guide</msg>
+<var>${text_expect}</var>
+<arg>${usre_guide_page_title_h1}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T16:56:26.582663" elapsed="0.938988"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${text_expect}</arg>
+<arg>${user_guide_page_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-08-27T16:56:27.521864" elapsed="0.000470"/>
+</kw>
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-08-27T16:56:27.523840" level="INFO">Switching to page page=0e77a23b-5748-49c2-8758-d3b97684f2c9,context CURRENT, browser CURRENT</msg>
+<msg time="2025-08-27T16:56:27.565409" level="INFO">Successfully changed active page: page=0e77a23b-5748-49c2-8758-d3b97684f2c9</msg>
+<arg>${previous}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-08-27T16:56:27.522906" elapsed="0.042852"/>
+</kw>
+<doc>检查User Guide页面正常打开</doc>
+<status status="PASS" start="2025-08-27T16:56:26.256061" elapsed="1.309848"/>
+</kw>
+<msg time="2025-08-27T16:56:27.609664" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2025-08-27T16:56:27.612748" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2025-08-27T16:56:27.613613" level="INFO">Switching browser to browser=dadda768-98e2-4eb1-9bd1-8ced2f5b4b52</msg>
+<msg time="2025-08-27T16:56:27.619827" level="INFO">Successfully changed active browser: browser=dadda768-98e2-4eb1-9bd1-8ced2f5b4b52</msg>
+<msg time="2025-08-27T16:56:27.620021" level="INFO">Switching context to context=d70033fe-b8e8-4e51-bada-a9174d5309a7 in CURRENT</msg>
+<msg time="2025-08-27T16:56:27.993492" level="INFO">Successfully changed active context: context=d70033fe-b8e8-4e51-bada-a9174d5309a7</msg>
+<msg time="2025-08-27T16:56:27.993649" level="INFO">Switching to page page=49cb76a9-19a8-4365-915a-85577ad70473,context CURRENT, browser CURRENT</msg>
+<msg time="2025-08-27T16:56:28.393347" level="INFO">Successfully changed active page: page=49cb76a9-19a8-4365-915a-85577ad70473</msg>
+<msg time="2025-08-27T16:56:28.643726" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<tag>WEB</tag>
+<status status="PASS" start="2025-08-27T16:56:25.958759" elapsed="1.610039"/>
+</test>
+<kw name="Clear Environment" owner="000_common_keyword" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-27T16:56:29.502253" level="INFO">Closed all browsers</msg>
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-27T16:56:28.645935" elapsed="0.856526"/>
+</kw>
+<status status="PASS" start="2025-08-27T16:56:28.645158" elapsed="0.857446"/>
+</kw>
+<status status="PASS" start="2025-08-27T16:56:21.910177" elapsed="7.592479"/>
+</suite>
+<status status="PASS" start="2025-08-27T16:56:21.907650" elapsed="7.601343"/>
+</suite>
+<status status="PASS" start="2025-08-27T16:56:19.061481" elapsed="10.448815"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">extra</stat>
+<stat pass="1" fail="0" skip="0">WEB</stat>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="3" fail="0" skip="0">Testcases</stat>
+<stat name="000 Common" id="s1-s1" pass="2" fail="0" skip="0">Testcases.000 Common</stat>
+<stat name="Demo" id="s1-s1-s1" pass="2" fail="0" skip="0">Testcases.000 Common.Demo</stat>
+<stat name="001 Docs" id="s1-s2" pass="1" fail="0" skip="0">Testcases.001 Docs</stat>
+<stat name="001 DocsTestcase" id="s1-s2-s1" pass="1" fail="0" skip="0">Testcases.001 Docs.001 DocsTestcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

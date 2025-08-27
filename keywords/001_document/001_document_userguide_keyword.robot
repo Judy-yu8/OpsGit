@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../config/librarys.resource
+Resource    ../../config/librarys.resource
 
 *** Keywords ***
 Go To User Guide Page
