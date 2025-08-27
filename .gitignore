@@ -1,0 +1,11 @@
+/.venv/
+/.vscode/
+/.idea/
+/log/
+/report/
+/interactive_console_output.xml
+/log.html
+/output.xml
+/report.html
+/playwright-log.txt
+library/__pycache__/
